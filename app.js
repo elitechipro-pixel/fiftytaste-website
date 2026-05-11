@@ -50,7 +50,7 @@ function placeOrder() {
   orderMessage += `%0APhone: ${phone}`;
   orderMessage += `%0AAddress: ${address}`;
 
-  const whatsappNumber = "2348000000000";
+  const whatsappNumber = "2349020200061";
 
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${orderMessage}`;
 
