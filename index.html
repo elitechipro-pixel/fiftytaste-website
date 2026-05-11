@@ -8,49 +8,188 @@
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Fifty Taste</h1>
-    <p>Delicious shawarma, drinks & snacks in Abuja</p>
-    <button onclick="scrollToMenu()">Order Now</button>
-  </header>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Fifty<span>Taste</span></div>
 
-  <section id="menu" class="menu">
-    <h2>Menu</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#cart">Cart</a></li>
+    </ul>
 
-    <div class="card">
-      <h3>Medium Shawarma</h3>
-      <p>₦5,000</p>
-      <button onclick="addToCart('Medium Shawarma', 5000)">Add to Cart</button>
+    <button class="order-btn" onclick="scrollToMenu()">
+      Order Now
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h3>BEST SHAWARMA IN ABUJA</h3>
+
+      <h1>
+        TASTE THE <span>PERFECTION</span>
+      </h1>
+
+      <p>
+        Delicious shawarma, refreshing drinks and premium snacks
+        delivered hot and fresh to your doorstep.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn" onclick="scrollToMenu()">
+          Explore Menu
+        </button>
+
+        <button class="secondary-btn">
+          Learn More
+        </button>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Small Shawarma</h3>
-      <p>₦3,500</p>
-      <button onclick="addToCart('Small Shawarma', 3500)">Add to Cart</button>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=1200&auto=format&fit=crop" alt="">
     </div>
 
-    <div class="card">
-      <h3>Hibiscus Drink</h3>
-      <p>₦2,000</p>
-      <button onclick="addToCart('Hibiscus Drink', 2000)">Add to Cart</button>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+
+    <div class="section-title">
+      <h2>Our <span>Menu</span></h2>
     </div>
+
+    <div class="menu-grid">
+
+      <!-- CARD 1 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="menu-content">
+          <h3>Medium Shawarma</h3>
+
+          <p>
+            Loaded with juicy chicken, sausages and creamy sauce.
+          </p>
+
+          <div class="price">₦5,000</div>
+
+          <button onclick="addToCart('Medium Shawarma', 5000)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="menu-content">
+          <h3>Small Shawarma</h3>
+
+          <p>
+            A smaller but tasty version packed with flavor.
+          </p>
+
+          <div class="price">₦3,500</div>
+
+          <button onclick="addToCart('Small Shawarma', 3500)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="menu-content">
+          <h3>Hibiscus Drink</h3>
+
+          <p>
+            Fresh chilled hibiscus drink with natural flavors.
+          </p>
+
+          <div class="price">₦2,000</div>
+
+          <button onclick="addToCart('Hibiscus Drink', 2000)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
-  <section class="cart-section">
-    <h2>Your Cart</h2>
-    <ul id="cartItems"></ul>
-    <h3>Total: ₦<span id="total">0</span></h3>
+  <!-- CART -->
+  <section id="cart" class="promo">
+
+    <div class="promo-box">
+
+      <h2>Your Cart</h2>
+
+      <ul id="cartItems"></ul>
+
+      <h3>
+        Total: ₦<span id="total">0</span>
+      </h3>
+
+    </div>
+
   </section>
 
-  <section class="checkout">
-    <h2>Checkout</h2>
+  <!-- CHECKOUT -->
+  <section class="menu-section">
 
-    <input type="text" id="name" placeholder="Your Name"/>
-    <input type="text" id="phone" placeholder="Phone Number"/>
-    <input type="text" id="address" placeholder="Delivery Address"/>
+    <div class="section-title">
+      <h2>Checkout</h2>
+    </div>
 
-    <button onclick="placeOrder()">Place Order</button>
+    <div class="checkout-box">
+
+      <input type="text" id="name" placeholder="Your Name"/>
+      <input type="text" id="phone" placeholder="Phone Number"/>
+      <input type="text" id="address" placeholder="Delivery Address"/>
+
+      <button onclick="placeOrder()">
+        Place Order
+      </button>
+
+    </div>
+
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <h3>Fifty Taste</h3>
+
+        <p>
+          Premium food experience with fast delivery and fresh taste.
+        </p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+
+        <p>+234 902 020 0061</p>
+        <p>Abuja, Nigeria</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Fifty Taste. All rights reserved.
+    </div>
+
+  </footer>
 
   <script src="app.js"></script>
 </body>
